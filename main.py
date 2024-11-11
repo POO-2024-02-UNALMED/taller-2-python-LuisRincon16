@@ -29,7 +29,7 @@ class Auto:
         if self.registro == self.motor.registro:
             for i in range(len(self.asientos)):
                 if isinstance(asientos[i], Asiento):
-                    if self.asientos.registro == self.registro:
+                    if asientos[i].registro == self.registro:
                         return "Auto original"
         return "Las piezas no son originales"
 
